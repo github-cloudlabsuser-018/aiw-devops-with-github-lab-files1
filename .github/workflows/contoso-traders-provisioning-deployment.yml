@@ -264,7 +264,7 @@ jobs:
         run: npm install
         working-directory: src/ContosoTraders.Ui.Website
       - name: npm run build
-        run: npm run build
+        run: npm react-scripts --openssl-legacy-provider --max_old_space_size=8000 build"
         working-directory: src/ContosoTraders.Ui.Website
       - name: deploy to storage
         uses: azure/CLI@v1
